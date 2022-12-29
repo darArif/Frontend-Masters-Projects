@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+.webpage-heading h1 {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+.main-body {
+    padding: 1.5rem;
+    padding-top: 0rem;
+}
+
+.main-body .nav-links {
+    display: flex;
+    flex-direction: row;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 1px solid black;
+    justify-content: space-around;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.main-body .politics-section {
+    display: grid;
+    grid-template-areas: "article-00 article-01 article-02"
+                         "article-10 article-11 article-11"
+                         "article-20 article-20 article-20";
+}
+
+.main-body .politics-section .article-00 {
+    grid-area: article-00;
+    border: 1px solid black;
+    border-left: 3px solid black;
+    padding: 1rem;
+    
+}
+
+article h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.main-body .politics-section .article-01 {
+    grid-area: article-01;
+    border: 1px solid black;
+    padding: 1rem;
+
+}
+
+.main-body .politics-section .article-02 {
+    grid-area: article-02;
+    border: 1px solid black;
+    border-right: 3px solid black;
+    padding: 1rem;
+}
+
+.main-body .politics-section .article-10 {
+    grid-area: article-10;
+    border: 1px solid black;
+    border-left: 3px solid black;
+    padding: 1rem;
+}
+
+.main-body .politics-section .article-11 {
+    grid-area: article-11;
+    border: 1px solid black;
+    border-right: 3px solid black;
+    padding: 1rem;
+}
+
+.main-body .politics-section .article-20 {
+    grid-area: article-20;
+    border: 1px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 1rem;
+    
+}

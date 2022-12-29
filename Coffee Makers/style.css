@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "page-header"
+                         "main-section"
+                         "main-section"
+                         "main-section"
+                         "main-section"
+                         "main-section"
+                         "main-section"
+                         "totals-section"
+                         "totals-section"
+                         "totals-section"
+                         "totals-section"
+                         "order-btn";
+    row-gap: 3rem;
+}
+
+.page-header {
+    grid-area: page-header;
+    background-color: black;
+    color: white;
+}
+
+.page-header .header-icon {
+
+}
+
+.page-header .header-heading {
+
+}
+
+.main-section {
+    grid-area: main-section;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    color: darksalmon;
+}
+
+.main-section .items-div {
+    background-color: pink;
+}
+
+h2{
+    display: flex;
+    align-items: flex-start;
+}
+
+.main-section .items-div .items-list {
+    list-style-type: none;
+}
+
+.main-section .items-div .items-list .each-items-list {
+    border-bottom: 1px solid black;
+}
+
+.main-section .items-div .items-list:last-child {
+    border-bottom: none;
+}
+
+.item-multiplier {
+    color: darksalmon;
+}
+
+.each-items-list li {
+    color: darksalmon;
+}
+
+.each-items-list .item-name {
+    color: black;
+}
+
+.name-payment-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.totals-section {
+    grid-template-areas: totals-section;
+}
+
+.order-btn {
+    grid-template-areas: order-btn;
+}
