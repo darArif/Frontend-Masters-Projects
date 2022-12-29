@@ -16,82 +16,61 @@
 
     <section class="main-section">
         <div class="items-div">
-            <h2 class="items-heading">ITEMS</h2>
-            <ul class="items-list">
-                <li>
-                    <ul class="each-items-list">
-                        <li>
-                            <span class="item-multiplier">1x</span>
-                            <span class="item-name">Cappiccino</span>
-                            <span class="item-price">$3.35</span>
-                        </li>
-                        <li>Lite Foam</li>
-                    </ul>
-                <li>
-                    <ul class="each-items-list">
-                        <li>
-                            <span class="item-multiplier">1x</span>
-                            <span class="item-name">Cappiccino</span>
-                            <span class="item-price">$3.85</span>
-                        </li>
-                        <li>Lite Milk</li>
-                        <li>Double Espresso</li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="each-items-list">
-                        <li>
-                            <span class="item-multiplier">1x</span>
-                            <span class="item-name">Crossiant</span>
-                            <span class="item-price">$2.45</span>
-                        </li>
-                        <li>Butter</li>
-                    </ul>
-                </li>
-            </ul>
+            <h5 class="items-heading">ITEMS</h5>
+            <div class="items-grid">
+                <div class="item-multiplier m1">1x</div>
+                <div class="main-item i1">Cappiccino</div>
+                <div class="item-price p1">$3.45</div>
+                <div class="item-req r11">Lite Foam</div>
+                <div class="bottom-border b1"></div>
+                <div class="item-multiplier m2">1x</div>
+                <div class="main-item i2">Cappiccino</div>
+                <div class="item-price p2">$4.45</div>
+                <div class="item-req r21">Lite Milk</div>
+                <div class="item-req r22">Double Expresso</div>
+                <div class="bottom-border b2"></div>
+                <div class="item-multiplier m3">1x</div>
+                <div class="main-item i3">Crossiant</div>
+                <div class="item-price p3">$2.45</div>
+                <div class="item-req r31">Butter</div>
+            </div>
         </div>
         <div class="name-payment-div">
 
             <div class="name-div">
-                <h3>Name</h3>
+                <h5>NAME</h5>
                 <fieldset>
-                    <legend>Name of Orde</legend>
-                    <input type="text">
+                    <legend>Name of Order</legend>
                 </fieldset>
             </div>
             
             <div class="payment-div">
-                <h3>Payment</h3>
+                <h5>PAYMENT</h5>
                 <fieldset class="card-no">
                     <legend>Card Number</legend>
-                    <input type="number">
                 </fieldset>
                 <fieldset class="ccv-no">
                     <legend>CCV Number</legend>
-                    <input type="number">
                 </fieldset>
             </div>
         </div>
     </section>
 
     <section class="totals-section">
-        <ul class="totals-list">
-            <li>
-                <span class="key">Sub-Total</span>
-                <span class="value">$9.65</span>
-            </li>
-            <li>
-                <span class="key">Tax</span>
-                <span class="value">$0.82</span>
-            </li>
-            <li>
-                <span class="key">Total</span>
-                <span class="value">$10.47</span>
-            </li>
-        </ul>
+        <div class="totals-grid">
+            <div>Subtotal:</div>
+            <div>$9.65</div>
+            <div>Tax:</div>
+            <div>$0.55</div>
+            <div>Total:</div>
+            <div>$11.75</div>
+        </div>
+    </section>
+        
+    <section class="order-section">
+        <button class="order-btn">Place Order</button>
     </section>
 
-    <button class="order-btn">Place Order</button>
     
 </body>
 </html>
