@@ -1,0 +1,110 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.calculator {
+    padding: 0;
+    max-width: 500px;
+    border: 1px solid black;
+    display: grid;
+   grid-template-areas: "result result result result"
+                         "clear-screen-key clear-screen-key clear-last-key divide-key"
+                         "key-7 key-8 key-9 product-key"
+                         "key-4 key-5 key-6 minus-key"
+                         "key-1 key-2 key-3 addition-key"
+                         "key-0 key-0 key-0 equals-key";
+}
+    .result {
+        grid-area: result;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 60px;
+        padding: 0.5rem;
+        padding-right: 0.5rem;
+        background-color: black;
+        color: white;
+        overflow: auto;
+    }
+    .key {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(217, 209, 209);
+        border: 1px solid black;
+    }
+    .key:hover {
+        background-color: rgb(151, 147, 147);
+        cursor: pointer;
+    }
+    .operation-key {
+        color: red
+    }
+    .clear-screen-key {
+        grid-area: clear-screen-key;
+        width: 120px;
+    }
+    .clear-last-key {
+        grid-area: clear-last-key;
+    }
+    .divide-key {
+        grid-area: divide-key;
+    }
+    .product-key {
+        grid-area: product-key;
+    }
+    .minus-key {
+        grid-area: minus-key;
+    }
+    .addition-key {
+        grid-area: addition-key;
+    }
+    .equals-key {
+        grid-area: equals-key;
+    }
+    .key-0 {
+        grid-area: key-0;
+        width: 180px;
+    }
+    .key-1 {
+        grid-area: key-1;
+    }
+    .key-2 {
+        grid-area: key-2;
+    }
+    .key-3 {
+        grid-area: key-3;
+    }
+    .key-4 {
+        grid-area: key-4;
+    }
+    .key-5 {
+        grid-area: key-5;
+    }
+    .key-6 {
+        grid-area: key-6;
+    }
+    .key-7 {
+        grid-area: key-7;
+    }
+    .key-8 {
+        grid-area: key-8;
+    }
+    .key-9 {
+        grid-area: key-9;
+    }
