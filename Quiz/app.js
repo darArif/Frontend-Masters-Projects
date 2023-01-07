@@ -66,68 +66,87 @@ previousBtn.addEventListener('click', function() {
     }  
 })
 
+const controllers = [
+    new AbortController(),
+    new AbortController(),
+    new AbortController(),
+    new AbortController(),
+    new AbortController()
+]
+
 questions[0].addEventListener('click', function (e) {
 
     if(e.target.className.includes('option-true')) {
 
         e.target.style.backgroundColor = 'green';
+        controllers[0].abort();
 
     } else if(e.target.className.includes('option-false')) {
 
         e.target.style.backgroundColor = 'red';
+        controllers[0].abort();
     }
 
-}, {once:true});
+}, {signal:controllers[0].signal});
 
 questions[1].addEventListener('click', function (e) {
 
     if(e.target.className.includes('option-true')) {
 
         e.target.style.backgroundColor = 'red';
+        controllers[1].abort();
 
     } else if(e.target.className.includes('option-false')) {
 
         e.target.style.backgroundColor = 'green';
+        controllers[1].abort();
     }
 
-}, {once:true});
+}, {signal:controllers[1].signal});
 
 questions[2].addEventListener('click', function (e) {
 
     if(e.target.className.includes('option-true')) {
         
         e.target.style.backgroundColor = 'red';
+        controllers[2].abort();
 
     } else if(e.target.className.includes('option-false')) {
 
         e.target.style.backgroundColor = 'green';
+        controllers[2].abort();
     }
 
-}, {once:true});
+}, {signal:controllers[2].signal});
 
 questions[3].addEventListener('click', function (e) {
 
     if(e.target.className.includes('option-true')) {
 
         e.target.style.backgroundColor = 'green';
+        controllers[3].abort();
 
     } else if(e.target.className.includes('option-false')) {
 
         e.target.style.backgroundColor = 'red';
+        controllers[3].abort();
     }
 
-}, {once:true});
+}, {signal:controllers[3].signal});
+
 
 questions[4].addEventListener('click', function (e) {
 
     if(e.target.className.includes('option-true')) {
 
         e.target.style.backgroundColor = 'red';
+        controllers[4].abort();
 
     } else if(e.target.className.includes('option-false')) {
 
         e.target.style.backgroundColor = 'green';
+        controllers[4].abort();
     }
-}, {once:true});
+}, {signal:controllers[4].signal});
 
 
