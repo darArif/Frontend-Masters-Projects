@@ -1,0 +1,114 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(66, 62, 62);
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    padding: 2.5rem;
+    background-color: rgb(148, 140, 140);
+}
+
+.figures {
+    width: 80vw;
+    min-width: 250px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+figure {
+    width: 100%;
+    height: 250px;
+    margin: 2.5rem auto;
+    margin-top: 0;
+}
+
+.background-img {
+   background-color: white;
+   width: 100%;
+   height: 100%;
+}
+
+figcaption {
+    width: 100%;
+    margin-top: 0;
+    background-color: rgb(17, 14, 14);
+    color: rgb(216, 204, 204);
+}
+
+figcaption h2 {
+    margin-top: 0;
+   
+}
+
+@media only screen and (min-width: 550px) {
+    .sec1, .sec2, .sec3 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4%;
+        
+    }
+
+    .sec1 .fig1, .sec1 .fig2, .sec1 .fig3, .sec1 .fig4 {
+        flex-basis: 48%;
+    }
+
+    .sec2 .fig1 , .sec2 .fig2 {
+        flex-basis: 100%;
+    }
+
+    .sec2 .fig3, .sec2 .fig4 {
+        flex-basis: 48%;
+    }
+
+    .sec3 .fig1, .sec3 .fig2, .sec3 .fig3, .sec3 .fig4 {
+        flex-basis: 48%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .sec1, .sec2, .sec3 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sec1 .fig1, .sec1 .fig2, .sec1 .fig3, .sec1 .fig4 {
+        flex-basis: 22%;
+    }
+
+    .sec2 .fig1 , .sec2 .fig2 {
+        flex-basis:48%;
+    }
+
+    .sec2 .fig3, .sec2 .fig4 {
+        flex-basis: 48%;
+    }
+
+    .sec3 .fig1, .sec3 .fig2, .sec3 .fig3, .sec3 .fig4 {
+        flex-basis: 22%;
+    }
+}
+
+footer {
+    background-color: black;
+    height: 80px;
+}
+
