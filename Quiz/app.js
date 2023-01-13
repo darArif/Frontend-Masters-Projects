@@ -54,7 +54,7 @@ previousBtn.addEventListener('click', function() {
         }
     }
     if(currQuestionNumb === 1) {
-
+       
         questions[questions.length-1].classList.remove('hidden');
 
         questions[questions.length-1].classList.add('active');

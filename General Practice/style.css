@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(192, 139, 74);
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.collections , .about, .connect, .donate{
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: aqua;
+}
+
+.brand-title {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    
+}
